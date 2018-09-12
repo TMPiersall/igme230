@@ -1,0 +1,74 @@
+*{ /* this dictates styles that are across the entire site*/
+    box-sizing: boarder-box;
+    background: #d6ffe2;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: block;
+    margin-left: 50px;
+}
+
+img{
+    max-width: 180px;
+    float: left; /*allows the image to sit to the left of the text*/
+    margin-right: 40px;
+    /*border formatting that sets corner rounding, type, and color*/
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #91ad9a;
+}
+
+/*h1.name refers to the first header and it's class*/
+h1.name{
+    float: inherit;
+    padding-top: 60px;
+    border-bottom: solid;
+    border-color: #91ad9a;
+    max-width: 500px;
+    margin: 0px;
+}
+
+h2{
+    margin-top: 5px;     
+}
+
+/*dictates format for sections that hold the list*/
+section{
+    float: none;
+    margin-top: 100px;
+}
+
+/*refers to the projects section and it's class*/
+section.projects{
+    margin:0px;    
+}
+
+/*all the list items are within a div in order to separate them into more organized columns*/
+div{
+    column-count: 4;
+}
+
+/*ICE header and class*/
+h1.ICE{
+    float: none;
+    padding-top: 20px;
+}
+
+li{
+    list-style: none; /*removes default bullet points*/
+}
+
+/*changes link's default color and underline*/
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/*changes links' defualt hover state*/
+a:hover {
+    color: #ff7777;
+    border-bottom: dotted 1px; 
+}
+
+
