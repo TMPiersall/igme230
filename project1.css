@@ -44,8 +44,8 @@ section.projects{
     margin:0px;    
 }
 
-/*all the list items are within a div in order to separate them into more organized columns*/
-div{
+/*all the list items are within the unordered list tag*/
+ul{
     column-count: 4;
 }
 
