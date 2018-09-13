@@ -1,5 +1,5 @@
 *{ /* this dictates styles that are across the entire site*/
-    box-sizing: boarder-box;
+    box-sizing: border-box;
     background: #d6ffe2;
     font-family: 'Roboto', sans-serif;
 }
