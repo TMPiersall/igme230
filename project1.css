@@ -1,47 +1,72 @@
 *{ /* this dictates styles that are across the entire site*/
     box-sizing: border-box;
-    background: #d6ffe2;
     font-family: 'Roboto', sans-serif;
 }
 
+nav {
+    padding: 10px;
+    background: #a0d6bd;
+}
+
+h2.title {
+    margin: 0;
+}
+
+nav h2 {
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+
+
 body{
     display: block;
-    margin-left: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    float: left;
+    background: #d6ffe2;
+    max-width: 50%;
+    height: 100%;
 }
 
 img{
-    max-width: 180px;
-    float: left; /*allows the image to sit to the left of the text*/
-    margin-right: 40px;
+    max-width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: block;
+    margin: auto;
     /*border formatting that sets corner rounding, type, and color*/
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #91ad9a;
 }
 
 /*h1.name refers to the first header and it's class*/
-h1.name{
-    float: inherit;
-    padding-top: 60px;
-    border-bottom: solid;
-    border-color: #91ad9a;
-    max-width: 500px;
+h1{
+    padding-left: 38%;
     margin: 0px;
+    font-family: 'Libre Baskerville', serif;
+    color: #59a08c;
 }
 
 h2{
-    margin-top: 5px;     
+    margin-top: 5px; 
+    padding-left: 38%;  
+    font-family: 'libre Baskerville', serif;
+    color: #59a08c;  
 }
 
 /*dictates format for sections that hold the list*/
 section{
     float: none;
     margin-top: 100px;
+
 }
 
 /*refers to the projects section and it's class*/
 section.projects{
-    margin:0px;    
+    margin:auto;    
 }
 
 /*all the list items are within the unordered list tag*/
