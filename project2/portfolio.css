@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+ /***NAVIGATION***/
 nav {
     background: #ADE0DA;
 }
@@ -27,6 +28,7 @@ nav a.worktab {
     padding:0;
 }
 
+/*DROPDOWN*/
 div.dropdown {
     font-size: 24px;
     float: right;
@@ -60,6 +62,7 @@ div.dropdown:hover .menu {
     display: block;
 }
 
+/*****HEADER*****/
 header {
     min-height: 90vh;
     background: #ADE0DA;
@@ -69,7 +72,7 @@ header h1{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin: auto;
-    padding: 180px 0 30px 0;
+    padding: 35vh 0 30px 0;
     color: white;
     font-size: 64px;
 }
@@ -83,6 +86,7 @@ header p{
     max-width: 576px;
 }
 
+/***SECTIONS GENERAL****/
 section{
     /*max-width: 1152px;*/
     padding-left: 24px;
@@ -97,6 +101,25 @@ section.about {
     background: #DAEAEA;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #054756;
+    font-size: 48px;
+    margin: auto;
+    padding-top: 48px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+#content {
+    margin: auto;
+    max-width: 1600px;
+}
+
+/****ABOUTME****/
 section.about img{
     float: left;
     max-width: 264px;
@@ -108,8 +131,8 @@ p.info, p.info2 {
     max-width: 852px;
 }
 
-div{
-    margin: 52px auto 0 auto;
+div.aboutinfo{
+    margin: 52px 0 0 0;
 }
 
 p.info2 {
@@ -127,21 +150,9 @@ p.lower a {
     text-decoration: none;
 }
 
+/****CONTACT****/
 section.contact {
-    min-height: 60vh;
-}
-
-h2 {
-    font-family: 'Raleway', sans-serif;
-    color: #054756;
-    font-size: 48px;
-    margin: auto;
-    padding-top: 48px;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    min-height: 400px;
 }
 
 section.contact h2{
@@ -170,6 +181,7 @@ section.contact p{
     margin-bottom: 8px;
 }
 
+/****FOOTER****/
 footer{
     background: #ADE0DA;
     min-height: 48px;
