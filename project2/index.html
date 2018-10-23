@@ -2,17 +2,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="portfolio.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway:400,700" rel="stylesheet">
     </head>
     <body>
         <nav>
             <img src="logo.png" title="Theresa Piersall">
             <a href="#contactsec">Contact</a>
             <a href="#Mesec">About Me</a>
-            <a href="#worksec">Work</a>
+            <div class="dropdown">
+                <a href="#worksec" class="worktab">Work</a>
+                <div class="menu">
+                    <a href>Motion Graphics</a>
+                    <a href>UX/UI</a>
+                    <a href>Drawing</a>
+                    <a href>Misc.</a>
+                </div> 
+            </div>
             <a href>Home</a>
-            
-            
         </nav>
         <header>
             <h1>Welcome!</h1>
@@ -25,9 +31,12 @@
         <section class="about" id="Mesec">
             <h2>About Me</h2>
             <p>Since you're here, why don't we get to know each other?</p>
-            <img src="girlandpup.jpg" title="Me">
-            <p class="info">My name is Theresa Piersall and I’m studying New Media Design at RIT. I have a particular interest in Motion Graphics and 2D screen design but my original introduction to the design world began with drawing and painting back in high school. <br>
-            Outside of designing I love to read and shoot archery.  Most days you’re much more likely to find me in the library than the lab. The best way to do anything is while surrounded by books.  </p>
+            <div>
+                <img src="face.jpg" title="Me">
+                <p class="info">My name is Theresa Piersall and I’m studying New Media Design at RIT. I have a particular interest in Motion Graphics and 2D screen design but my original introduction to the design world began with drawing and painting back in high school. </p>
+                <p class="info2">Outside of designing I love to read and shoot archery.  Most days you’re much more likely to find me in the library than the lab. The best way to do anything is while surrounded by books.  </p>
+            </div>
+            <p class="lower">To find out more about what I've done, check out my <a href>Resume!</a></p>
         </section>
         <section class="contact" id="contactsec">
             <h2>Contact</h2>
