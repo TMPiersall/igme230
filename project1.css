@@ -44,7 +44,7 @@ img{
 
 /*h1.name refers to the first header and it's class*/
 h1{
-    padding-left: 38%;
+    padding-left: 420px;
     margin: 0px;
     font-family: 'Libre Baskerville', serif;
     color: #59a08c;
@@ -52,7 +52,7 @@ h1{
 
 h2{
     margin-top: 5px; 
-    padding-left: 38%;  
+    padding-left: 420px;  
     font-family: 'libre Baskerville', serif;
     color: #59a08c;  
 }
