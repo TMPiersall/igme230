@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    background: #ADE0DA;
+}
+
+nav img{
+    max-width: 50px;
+    margin: 10px;
+}
+
+nav a{
+    font-size: 24px;
+    float: right;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: #054756;
+}
+
+header {
+    min-height: 90vh;
+    background: #ADE0DA;
+}
+
+header h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 180px 0 30px 0;
+    color: white;
+    font-size: 64px;
+}
+
+header p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 36px;
+    max-width: 576px;
+}
+
+section{
+    /*max-width: 1152px;*/
+    padding-left: 24px;
+}
+
+section.work {
+    min-height: 90vh;
+}
+
+section.about {
+    min-height: 90vh;
+    background: #DAEAEA;
+}
+
+section.about img{
+    float: left;
+    max-width: 264px;
+}
+
+p.info {
+    line-height: 40px;
+    max-width: 1011px;
+}
+
+section.contact {
+    min-height: 60vh;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #054756;
+    font-size: 48px;
+    margin: auto;
+    padding-top: 48px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+section.contact h2{
+    margin-bottom: 24px;
+}
+
+section.contact img {
+    max-width: 40px;
+    margin-right: 32px;
+}
+
+section.contact a{
+    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: #43D4C3;
+    padding-bottom: 24px;
+    padding-left: 16px;
+}
+
+p.FB{
+    padding-top: 24px;
+}
+
+section.contact p{
+    margin-bottom: 8px;
+}
+
+footer{
+    background: #ADE0DA;
+    min-height: 48px;
+}
+
+footer p{
+    font-size: 16px;
+    color: #054756;
+    text-align: center;
+    margin: auto;
+    padding-top: 16px;
+}
