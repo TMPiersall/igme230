@@ -13,8 +13,10 @@
 		#colorform{
 			background-color:#dfecdf;
 			color: #111;
-			padding:1em;width:400px;
+			padding:1em;
+			width:400px;
 		}
+		
 		#colorform p#info{
 			background-color:white;
 			color: black;
@@ -41,7 +43,43 @@
 </div>
 
 <script>
-/* Write your code here! */
+	let radioButtons = document.querySelectorAll("input");
+	let radioRed = radioButtons[0].value;
+	let radioGrn = radioButtons[1].value;
+	let radioBlu = radioButtons[2].value;
+
+	let submit = document.getElementById("colorButton");
+	let legend = document.querySelector("legend");
+
+	for (let i = 0; i < radioButtons.length; i++){
+		radioButtons[i].onclick = function(){
+			radioSelect(radioButtons[i].value);
+			submit.onclick = function(){
+				submitPressed(radioButtons[i].value);
+			}
+		}
+	}
+
+	function radioSelect(color){
+		let info = document.getElementById("info");
+		info.innerHTML = "You have selected the color " + color;
+	}
+
+	function submitPressed(color){
+		let info = document.getElementById("info");
+		info.innerHTML = "Your FINAL CHOICE is " + color;
+		if (color == radioButtons[0].value){
+			legend.style.color = "red";
+			console.log("red");
+		}
+		else if (color == radioButtons[1].value){
+			legend.style.color = "green";
+		}
+		else{
+			legend.style.color = "blue";
+		}
+	}
+
 </script>
 </body>
 </html>

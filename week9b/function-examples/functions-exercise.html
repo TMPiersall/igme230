@@ -31,16 +31,39 @@
     
     <script>
         "use strict";
-        let colors = [Cyan, Plum, Rose]; // add some colors
-        let foods = [Potatoes, Soup, Chicken]; // add some foods
+        let colors = ["cyan", "plum", "rose"]; // add some colors
+        let foods = ["potatoes", "soup", "chicken"]; // add some foods
 
-        for (i=0; i < colors.length; i++){
-            colorslist.appendChild(colors[i]);
+        let idcolor = document.getElementById("colorsList");
+        let idfood = document.getElementById("foodsList");
+
+        createList(idcolor, colors);
+        createList(idfood, foods);
+        /*for (let i = 0; i < colors.length; i++){
+           let idName = document.getElementById("colorsList");
+           let list = document.createElement('li');
+           list.innerHTML = colors[i];
+           idName.appendChild(list);
         }
 
-        for (i=0; i < foods.length; i++){
+        for (let i = 0; i < foods.length; i++){
+            let idName = document.getElementById("foodsList");
+            let list = document.createElement('li');
+            list.innerHTML = foods[i];
+            idName.appendChild(list);
+        }*/
 
+        function createList(listElement, array){
+            for (let i = 0; i < foods.length; i++){
+                let idcolor = document.getElementById("colorsList");
+                let idfood = document.getElementById("foodsList");
+                let list = document.createElement('li');
+                list.innerHTML = array[i];
+                listElement.appendChild(list);
+            }
+            
         }
+
     </script>
     
 </body>
