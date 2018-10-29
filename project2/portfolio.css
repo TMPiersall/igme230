@@ -29,7 +29,7 @@ nav a.worktab {
 }
 
 /*DROPDOWN*/
-+.dropdown {
+.dropdown {
     font-size: 24px;
     float: right;
     margin: auto;
@@ -66,6 +66,7 @@ div.dropdown:hover .menu {
 header {
     min-height: 90vh;
     background: #ADE0DA;
+    background-image: url("background.png");
 }
 
 header h1{
