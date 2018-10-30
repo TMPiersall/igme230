@@ -41,6 +41,7 @@ nav a.worktab {
 div.menu {
     display: none;
     position: absolute;
+    top: 60px;
     max-width: 100px;
     z-index: 1;
     background: #8bb7b2; 
@@ -119,6 +120,44 @@ p {
     margin: auto;
     max-width: 1600px;
 }
+
+/****WORK****/
+div.links {
+    margin: 52px 0 0 0;
+}
+
+.work img{
+    /*clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
+    max-width: 300px;
+    z-index: -1;
+    margin-right: 20px;
+}
+
+div.links p{
+    position: relative;
+    float: left;
+    text-align: center;8
+}
+
+/*img.ui {
+    position: relative;
+    top: 160px;
+    right: 140px;
+    z-index: -2;
+}
+
+img.proj {
+    position: relative;
+    right: 280px;
+    z-index: -1;
+}
+
+img.draw {
+    position: relative;
+    top: 160px;
+    right: 420px;
+    z-index: -2;
+}*/
 
 /****ABOUTME****/
 section.about img{
