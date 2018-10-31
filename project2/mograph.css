@@ -62,3 +62,29 @@ div.menu a:hover {
 div.dropdown:hover .menu {
     display: block;
 }
+
+/***Header***/
+header {
+    text-align: center;
+    color: #054756;
+    margin-top: 48px;
+}
+
+header h2 {
+    font-family: 'Merriweather', serif;
+}
+
+header h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+/***Section***/
+section{
+    text-align: center;
+    margin: auto;
+}
+
+section img{
+    max-width: 70vw;
+}
