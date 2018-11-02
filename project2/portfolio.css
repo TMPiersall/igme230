@@ -68,6 +68,8 @@ header {
     min-height: 90vh;
     background: #ADE0DA;
     background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header h1{
