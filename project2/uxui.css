@@ -68,6 +68,7 @@ header {
     text-align: center;
     color: #054756;
     margin-top: 48px;
+    margin-bottom: 24px;
 }
 
 header h2 {
@@ -77,4 +78,92 @@ header h2 {
 header h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+}
+
+/***Section***/
+section{
+    text-align: center;
+    margin: auto;
+}
+
+section img{
+    max-width: 70vw;
+    border: solid #ADE0DA 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+ }
+ 
+ section li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+ }
+ 
+ section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 48px;
+    line-height: 2rem;
+ }
+
+ br {
+     line-height: 3rem;
+ }
+
+ div.details {
+     max-width: 60vw;
+     text-align: center;
+     margin: auto;
+ }
+
+ div.details h2{
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #054756;
+    margin-bottom: 24px;
+ }
+
+ div.details h3{
+     font-family: 'Raleway', sans-serif;
+     font-size: 24px;
+     text-align: left;
+     color: #054756;
+     margin-bottom: 24px;
+
+ }
+
+ div p {
+     margin-top: 24px;
+ }
+
+ img.sketch{
+     border: none;
+ }
+
+ div img{
+     border: solid #ADE0DA 1px;
+     max-width: 400px;
+ }
+
+ div.img img{
+     max-height: 60vh;
+ }
+
+ /****FOOTER****/
+footer{
+    background: #ADE0DA;
+    min-height: 32px;
+}
+
+footer p{
+    font-size: 16px;
+    color: #054756;
+    text-align: center;
+    margin: auto;
+    padding-top: 8px;
 }
