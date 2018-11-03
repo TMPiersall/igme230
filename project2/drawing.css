@@ -162,3 +162,21 @@ footer p{
     margin: auto;
     padding-top: 8px;
 }
+
+@media only screen and (max-width: 500px) {
+    header{
+        margin-top: 24px;
+    }
+    section img{
+        max-width: 350px;
+    }
+    div.details{
+        max-width: 350px;
+    }
+    div img{
+        max-width: 70vw;
+    }
+    img {
+        max-width: 70vw;
+    }
+}

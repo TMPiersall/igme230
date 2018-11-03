@@ -241,7 +241,7 @@ footer p{
     padding-top: 16px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     /***HEADER***/
     header {
         background-image: url("images/starfull.png");
@@ -277,5 +277,15 @@ footer p{
         line-height: 40px;
         max-width: 350px;
         margin: 16px auto 0px auto;
+    }
+
+    div.footer{
+        max-width: 350px;
+        text-align: center;
+        margin: auto;
+    }
+
+    footer p{
+        padding: 6px;
     }
 }
