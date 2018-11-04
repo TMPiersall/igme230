@@ -17,6 +17,10 @@ nav img{
     margin: 10px;
 }
 
+a.logo {
+    float: none;
+}
+
 nav a{
     font-size: 24px;
     float: right;
@@ -98,6 +102,10 @@ h3{
 ul{
     font-family: 'Raleway', sans-serif;
     line-height: 2rem;
+}
+
+section.experience{
+    margin-bottom: 60px;
 }
 
 /****FOOTER****/

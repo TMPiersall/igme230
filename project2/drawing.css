@@ -15,6 +15,11 @@ a.mobile{
 nav img{
     max-width: 50px;
     margin: 10px;
+
+}
+
+a.logo {
+    float: none;
 }
 
 nav a{
