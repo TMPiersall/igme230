@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ /***NAVIGATION***/
+nav {
+    background: #ADE0DA;
+}
+
+a.mobile{
+    display: none;
+}
+
+nav img{
+    max-width: 50px;
+    margin: 10px;
+}
+
+nav a{
+    font-size: 24px;
+    float: right;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: #054756;
+}
+
+nav a.worktab {
+    margin:0;
+    padding:0;
+}
+
+/*DROPDOWN*/
+.dropdown {
+    font-size: 24px;
+    float: right;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: #054756;
+}
+div.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    max-width: 100px;
+    z-index: 1;
+    background: #8bb7b2; 
+}
+div.menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    float:left;
+    padding-right: 80%;
+    max-width: 100%;
+}
+div.menu a:hover {
+    background-color: #769e99;
+}
+div.dropdown:hover .menu {
+    display: block;
+}
+
+/***CONTENT***/
+header{
+    max-width: 60%;
+    margin: auto;
+}
+
+section{
+    max-width: 60%;
+    margin: 24px auto;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    color: #054756;
+    font-size: 48px;
+    margin-top: 48px; 
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #054756;
+    margin-bottom: 8px;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    font-family: 'Raleway', sans-serif;
+    line-height: 2rem;
+}
+
+/****FOOTER****/
+footer{
+    background: #ADE0DA;
+    min-height: 48px;
+}
+
+footer p{
+    font-size: 16px;
+    color: #054756;
+    text-align: center;
+    margin: auto;
+    padding-top: 16px;
+}
+
+@media print{
+    nav{
+        display: none;
+    }
+
+    h1{
+        margin-top: 0;
+    }
+
+    header{
+        margin: 16px;
+        max-width: 90%;
+    }
+
+    section{
+        margin: 16px;
+        max-width: 90%;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /***NAV***/
+    nav a{
+        font-size: 20px;
+        padding: 20px 8px 16px 8px;
+    }
+
+    div.dropdown{
+        display: none;
+    }
+
+    a.mobile{
+        display: block;
+    }
+
+    a.homenav{
+        display: none;
+    }
+
+    nav img{
+        max-width: 40px;
+    }
+
+    h1{
+        margin-top: 16px; 
+    }
+
+    /***CONTENT***/
+    header {
+        max-width: 90%;
+    }
+
+    section {
+        max-width: 90%;
+    }
