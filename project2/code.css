@@ -71,10 +71,47 @@ div.dropdown:hover .menu {
     display: block;
 }
 
+/***CONTENT***/
+section, header{
+    max-width: 60%;
+    margin: auto;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    color: #054756;
+    text-align: center;
+    margin-top: 48px;
+}
+
+h2{
+    font-family: 'Merriweather', serif;
+    color: #054756;
+    margin: 24px 0;
+}
+
+h3{
+    font-family: 'Raleway', serif;
+}
+
+p{
+    font-family: 'Raleway', serif;
+    line-height: 2rem;
+    margin-bottom: 24px;
+}
+
+/***LINKS***/
+section a{
+    font-weight: 600;
+    color: #43D4C3;
+    text-decoration: none;
+}
+
 /****FOOTER****/
 footer{
     background: #ADE0DA;
     min-height: 32px;
+    margin-top: 48px;
 }
 
 footer p{
@@ -83,4 +120,33 @@ footer p{
     text-align: center;
     margin: auto;
     padding-top: 8px;
+}
+
+@media only screen and (max-width: 500px) {
+    /***NAV***/
+    nav a{
+        font-size: 20px;
+        padding: 20px 8px 16px 8px;
+    }
+
+    div.dropdown{
+        display: none;
+    }
+
+    a.mobile{
+        display: block;
+    }
+
+    a.homenav{
+        display: none;
+    }
+
+    nav img{
+        max-width: 40px;
+    }
+
+    /***CONTENT***/
+    section, header{
+        max-width: 80%;
+    }
 }
