@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+            #navpanel{
+                background-color: #bbaadd;
+                border-radius: 12px;
+                width:200px;
+                height:200px;
+            }
+            ul{
+                list-style-type: none;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="show">Show Nav</button>
+        <button id="hide">Hide Nav</button>
+        <div id="navpanel">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </div>
+
+        <script>
+            //jquery call is "$" and it tells the JS to refereance the library we called in the head. 
+            $("#hide").click(function(){
+                $("#navpanel").hide(1000); //after the effect can hold "fast" "slow" or a number of milliseconds for the animation to occur. 
+            });
+
+            $("#show").click(function(){
+                $("#navpanel").show("fast");
+            });
+
+        </script>
+    </body>
+</html>
