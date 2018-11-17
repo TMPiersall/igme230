@@ -1,0 +1,98 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #ff703d;
+            }
+
+            #second{
+                background-color: #ffe44c;
+            }
+
+            a{
+                color: #00f;
+                font-size: 24px;
+                font-family: sans-serif;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            nav{
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                z-index: 1;               
+            }
+            
+            #opnclose{
+                font-size: 24px;
+                z-index:2;
+                text-align: center;
+                max-height: 32px;
+                min-width: 200px;
+                background-color: #ffd79b;
+                border: solid .5px;
+            }
+
+            #list{
+                position: absolute;
+                top: 26px;
+                min-height: 100px;
+                min-width: 200px;
+                background-color: white;
+                border: solid .5px;
+            }
+            
+            li a, li{
+                color: blue;
+                text-align: left;
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div id="opnclose">Links</div>
+            <div id="list">
+                <ul>
+                    <li><a href="#first">First Page</a></li>
+                    <li><a href="#second">Second Page</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <section id="first">
+            <a href="#second">See next page</a>
+        </section>
+        <section id="second">
+            <a href="#first">See last page</a>
+        </section>
+
+        <script>
+            $("#opnclose").click(function () {
+                $("#list").slideToggle("fast");
+            });
+
+            $("a[href^='#']").click(function(event){
+                event.preventDefault();
+                let target = $(this.hash);
+                $('html, body').animate({ scrollTop: target.offset().top }, 400);
+            });
+
+            //I'm still trying to figure out the :focus thing but I didn't want to leave it here while I still don't understand it/can't use it properly. 
+            
+        </script>
+    </body>
+</html>
