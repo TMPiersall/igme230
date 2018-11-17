@@ -6,6 +6,7 @@
             *{
                 box-sizing: border-box;
                 margin: 0;
+                padding: 0;
             }
 
             section{
@@ -14,6 +15,7 @@
                 align-items: center;
                 min-height: 100vh;
                 background-color: #ff703d;
+                z-index: 1;
             }
 
             #second{
@@ -33,33 +35,34 @@
             nav{
                 display: flex;
                 flex-direction: column;
-                position: fixed;
-                z-index: 1;               
+                position: fixed;      
             }
             
             #opnclose{
                 font-size: 24px;
-                z-index:2;
+                z-index: 3;
                 text-align: center;
                 max-height: 32px;
-                min-width: 200px;
+                width: 200px;
                 background-color: #ffd79b;
                 border: solid .5px;
             }
 
             #list{
+                z-index: 2;
                 position: absolute;
                 top: 26px;
                 min-height: 100px;
-                min-width: 200px;
+                width: 200px;
                 background-color: white;
                 border: solid .5px;
             }
-            
-            li a, li{
+
+            li a, li, ul{
                 color: blue;
-                text-align: left;
+                
                 list-style: none;
+                
             }
         </style>
     </head>
@@ -84,6 +87,8 @@
             $("#opnclose").click(function () {
                 $("#list").slideToggle("fast");
             });
+
+            //I cannot for the life of me figure out why the nav isn't animating properly. It just opens and closes without sliding. I've changed styles, parts of the script, html, referenced notes and websites and everything seems to be in order. I'll keep looking but for now, it is what it is. 
 
             $("a[href^='#']").click(function(event){
                 event.preventDefault();
