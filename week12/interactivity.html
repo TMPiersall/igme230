@@ -1,0 +1,103 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #ff703d;
+                z-index: 1;
+            }
+
+            #second{
+                background-color: #ffe44c;
+            }
+
+            a{
+                color: #00f;
+                font-size: 24px;
+                font-family: sans-serif;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            nav{
+                display: flex;
+                flex-direction: column;
+                position: fixed;      
+            }
+            
+            #opnclose{
+                font-size: 24px;
+                z-index: 3;
+                text-align: center;
+                max-height: 32px;
+                width: 200px;
+                background-color: #ffd79b;
+                border: solid .5px;
+            }
+
+            #list{
+                z-index: 2;
+                position: absolute;
+                top: 26px;
+                min-height: 100px;
+                width: 200px;
+                background-color: white;
+                border: solid .5px;
+            }
+
+            li a, li, ul{
+                color: blue;
+                
+                list-style: none;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div id="opnclose">Links</div>
+            <div id="list">
+                <ul>
+                    <li><a href="#first">First Page</a></li>
+                    <li><a href="#second">Second Page</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <section id="first">
+            <a href="#second">See next page</a>
+        </section>
+        <section id="second">
+            <a href="#first">See last page</a>
+        </section>
+
+        <script>
+            $("#opnclose").click(function () {
+                $("#list").slideToggle("fast");
+            });
+
+            //I cannot for the life of me figure out why the nav isn't animating properly. It just opens and closes without sliding. I've changed styles, parts of the script, html, referenced notes and websites and everything seems to be in order. I'll keep looking but for now, it is what it is. 
+
+            $("a[href^='#']").click(function(event){
+                event.preventDefault();
+                let target = $(this.hash);
+                $('html, body').animate({ scrollTop: target.offset().top }, 400);
+            });
+
+            //I'm still trying to figure out the :focus thing but I didn't want to leave it here while I still don't understand it/can't use it properly. 
+            
+        </script>
+    </body>
+</html>
