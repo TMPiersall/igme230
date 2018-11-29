@@ -1,0 +1,27 @@
+<p id="verse1">I'll admit it. I'm drowning.<br>
+I'm sinking, swallowed by it all<br>
+collapsing in on me<br></p>
+
+<p id="verse2">I do my best to breathe<br>
+It could be that something is broken<br>
+or it could be that I'm imagining<br>
+the weakness.</p>
+
+<p id="verse3">But what am I to do?<br>
+I ignore it sometimes,<br>
+I panic others,<br>
+there's no good answer to the question.</p>
+
+<p id="verse4">I speculate to pass the time.<br>
+It's so easy to imagine<br>
+the scenarios where I rise or fall.</p>
+
+<p id="verse5">Worry makes it worse<br>
+as stress is stressfuly the cause of more stress.<br>
+It's not that easy.<br>
+It's not that easy.</p>
+
+<p id="verse6">I won't give up<br>
+without a fight<br>
+I will not fall.<br>
+I will not fall.</p>
