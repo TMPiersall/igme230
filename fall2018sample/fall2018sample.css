@@ -76,6 +76,23 @@ footer{
     grid-area: footer;
 }
 
+.menuitem{
+    background-color: white;
+    margin: 0;
+    border-top: solid 1px white;
+    
+}
+
+.submenu {
+    background-color: lightgrey;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: .25rem;
+    display: none;
+}
+
+
 
 /*@media screen and (min-width: 760px) {
     #wrapper{
