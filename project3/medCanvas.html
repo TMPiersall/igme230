@@ -13,17 +13,17 @@
 
 <body>
     <div id="wrapper">
-        <h1>Easy Canvas</h1>
+        <h1>Medium Canvas</h1>
         <div id="pixelGrid"></div>
         
         <div id="links">
-            <a href="medCanvas.html">Medium Canvas</a>
+            <a href="index.html">Easy Canvas</a>
             <a href>Hard Canavs</a>
         </div>
 
         <div id="instructions">
             <p>These are your colors! Follow the key to add the right ones.</p>
-            <select id="colorChooser">
+            <!--<select id="colorChooser">
                 <option id="DBG" value="#6b7db5" selected>Dark Blue Grey</option>
                 <option id="MBG" value="#9ca8ce">Medium Blue Grey</option>
                 <option id="LBG" value="#b4c6e7">Light Blue Grey</option>
@@ -36,29 +36,46 @@
                 <option id="MG" value="#757171">Medium Grey</option>
                 <option id="cream" value="#dcd1a4">Cream</option>
                 <option id="Brown" value="#975103">Brown</option>
-            </select>
+            </select>-->
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="50" class="slider" id="redslide">
+            </div>
+            <p>Value:<span id="rtest"></span></p>
+            <div id="rSwatch"></div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="50" class="slider" id="greenslide">
+            </div>
+            <p>Value:<span id="gtest"></span></p>
+            <div id="rSwatch"></div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="50" class="slider" id="blueslide">
+            </div>
+            <p>Value:<span id="btest"></span></p>
+            <div id="rSwatch"></div>
             <div id="swatch"></div>
+            
+
             <button id="reset">Reset</button>
             <div id="Key">
                 <h2>Color Key</h2>
                 <ol>
-                    <li>Dark Blue Grey</li>
-                    <li>Medium Blue Grey</li>
-                    <li>Light Blue Grey</li>
-                    <li>Cherry</li>
-                    <li>White</li>
-                    <li>Dark Grey</li>
-                    <li>Yellow</li>
-                    <li>Black</li>
-                    <li>Light Grey</li>
-                    <li>Dark Grey</li>
-                    <li>Cream</li>
-                    <li>Brown</li>
+                    <li>RGB(55, 86, 35)</li>
+                    <li>RGB(84, 130, 53)</li>
+                    <li>RGB(169, 208, 142)</li>
+                    <li>RGB(226, 239, 218)</li>
+                    <li>RGB(255, 255, 255)</li>
+                    <li>RGB(174, 170, 170)</li>
+                    <li>RGB(240, 36, 36)</li>
+                    <li>RGB(185, 100, 7)</li>
+                    <li>RGB(131, 58, 3)</li>
+                    <li>RGB(38, 38, 38)</li>
+                    <li>RGB(58, 56, 56)</li>
+                    <li>RGB(129, 187, 89)</li>
                 </ol>
             </div>
         </div>
     </div>
-    <script src="project3.js"></script></script>
+    <script src="medCanvas.js"></script></script>
 </body>
 
 </html>
