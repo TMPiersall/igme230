@@ -1,9 +1,10 @@
-const numCols = 28;//num of times
-const numRows = 19;//num of times
-const cellSize = 25;//px
+const numCols = 34;//num of times
+const numRows = 23;//num of times
+const cellSize = 20;//px
 const numCells = numCols * numRows;
 let pixelGrid = document.querySelector("#pixelGrid");
 let color = $("#colorChooser").val(); //
+$("#swatch").css("background-color", color);
 
 /*let rSlider = document.getElementById("redslide");
 let rOutput = document.getElementById("rtest");
