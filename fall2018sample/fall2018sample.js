@@ -1,9 +1,9 @@
 /* Don't use <script> tags in a linked js file! */
 
-$("div.menubox:first-of-type").click(function(){
+$("div.menubox:first-of-type p").click(function(){
     $("div.menubox:first-of-type ul").slideToggle("slow");
 });
-$("div.menubox:last-of-type").click(function(){
+$("div.menubox:last-of-type p").click(function(){
     $("div.menubox:last-of-type ul").slideToggle("slow");
 });
 
