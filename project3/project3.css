@@ -11,16 +11,40 @@ html, body {
 #wrapper {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 4rem auto 1fr;
+    grid-template-rows: 3rem auto 1fr;
     grid-template-columns: 1fr auto 1fr;
-    grid-gap: 1em;
+    /*grid-gap: 1em;*/
+    row-gap: 1em;
+
 }
 
 h1 {
+    margin-top: 20px;
     grid-column-start: 2;
     font-size: 2rem;
     justify-self: center;
     font-family: 'Sacramento', cursive;
+    background-color: #ff9e9e;
+    min-width: 100%; 
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    background-color: #ff9e9e;
+    margin: 0px; 
+    padding-top: 17px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:hover{
+    color: #c068ff;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #pixelGrid {
@@ -30,18 +54,6 @@ h1 {
     grid-gap: 0px;
     justify-self: center;
     margin: 1em;
-}
-
-#links {
-    grid-row-start:3;
-    grid-column-start: 2;
-    display: flex;
-    justify-self: center;
-}
-
-a {
-    margin: 0 40px 0 40px;
-    text-decoration: none;
 }
 
 span.cell {
@@ -62,6 +74,10 @@ span.cellSelected {
     padding-right: 1em;
     justify-self: left;
     max-width: 20rem;;
+}
+
+#instructions p{
+    max-width: 200px;
 }
 
 #colorChooser {
