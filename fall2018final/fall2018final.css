@@ -1,0 +1,119 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darkblue;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+/***GRID***/
+#yourgrid{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "header header"
+    ". nav"
+    "article aside"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75px 30px auto 50px;
+}
+
+header{
+    grid-area: header;
+    background-color: lightpink;
+}
+
+nav{
+    grid-area: nav;
+    background-color: lavenderblush;
+}
+
+article{
+    grid-area: article;
+    background-color: lightcyan;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lightblue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightpink;
+}
+
+/**STYLING**/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p{
+    width: 6rem;
+    background-color: #ccc;
+    margin:0;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    background-color: #ddd;
+    padding: 0;
+    display: none;
+    position: absolute;
+}
+
+
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+}
+
+@media only screen and (max-width: 500px) {
+    #yourgrid{
+        grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "aside"
+        "footer";
+        grid-template-rows: 75px 30px auto auto 30px;
+        grid-template-columns: 1fr;
+    }
+}
