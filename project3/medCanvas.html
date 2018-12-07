@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>TMP Project 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sacramento|Josefin+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="project3.css">
@@ -13,16 +14,20 @@
 
 <body>
     <div id="wrapper">
-        <a href="easyCanvas.html">Easy Canvas</a>
+        <nav>
+            <a href="index.html" id="homeLink">Home</a>
+            <a href="easyCanvas.html">Easy Canvas</a>
+            <a href="hardCanvas.html">Hard Canvas</a>
+        </nav>
+
         <h1>Medium Canvas</h1>
-        <a href="hardCanvas.html">Hard Canvas</a>
+
+        <section id="mobileNote">
+            <h2>Hello!</h2>
+            <p>Unfortunately this puzzle doesn't work on mobile. Just move on over to your desk or laptop and we can get painting!</p>
+        </section>
 
         <div id="pixelGrid"></div>
-        
-        <!--<div id="links">
-            <a href="easyCanvas.html">Easy Canvas</a>
-            <a href="hardCanvas.html">Hard Canavs</a>
-        </div>-->
 
         <div id="instructions">
             <p>These are your colors! Follow the key to add the right ones.</p>

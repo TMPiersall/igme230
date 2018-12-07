@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>TMP Project 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sacramento|Josefin+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="project3.css">
@@ -13,16 +14,20 @@
 
 <body>
     <div id="wrapper">
-        <a href="easyCanvas.html">Easy Canvas</a>
+        <nav>
+            <a href="index.html" id="homeLink">Home</a>
+            <a href="easyCanvas.html">Easy Canvas</a>
+            <a href="medCanvas.html">Medium Canvas</a>
+            
+        </nav>
         <h1>Hard Canvas</h1>
-        <a href="medCanvas.html">Medium Canvas</a>
+
+        <section id="mobileNote">
+            <h2>Hello!</h2>
+            <p>Unfortunately this puzzle doesn't work on mobile. Just move on over to your desk or laptop and we can get painting!</p>
+        </section>
 
         <div id="pixelGrid"></div>
-        
-        <!--<div id="links">
-            <a href="index.html">Easy Canvas</a>
-            <a href="medCanvas.html">Medium Canavs</a>
-        </div>-->
 
         <div id="instructions">
             <p>These are your colors! Follow the key to add the right ones.</p>
@@ -32,7 +37,7 @@
                 <option id="PB" value="#d9e1f2">Pale Blue</option>
                 <option id="MG" value="#757171">Medium Grey</option>
                 <option id="SB" value="#8ea9db">Sky Blue</option>
-                <option id="Lgrey" value="#d0cece">Light Grey</option>
+                <option id="Lgrey" value="#aeaaaa">Light Grey</option>
                 <option id="white" value="white">White</option>
                 <option id="RB" value="#305496">Royal Blue</option>
                 <option id="seaB" value="#5d78cf">Sea Blue</option>
