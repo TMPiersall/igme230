@@ -1,6 +1,6 @@
 const numCols = 34;//num of times
 const numRows = 23;//num of times
-const cellSize = 20;//px
+const cellSize = 23;//px
 const numCells = numCols * numRows;
 let opac = ("rgba(0, 0, 0, 0.2)");
 let pixelGrid = document.querySelector("#pixelGrid");
