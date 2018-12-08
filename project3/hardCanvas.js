@@ -8,6 +8,7 @@ let color = $("#colorChooser").val(); //
 $("#swatch").css("background-color", color);
 $("#pixelGrid").css("font-size", "12px");
 
+//still hope to get the sliders going. Start code for that commented below
 /*let rSlider = document.getElementById("redslide");
 let rOutput = document.getElementById("rtest");
 rOutput.innerHTML = rSlider.value;
@@ -32,6 +33,7 @@ bSlider.oninput = function() {
     bOutput.innerHTML = this.value;
 }*/
 
+//largest grid array
 let hardGrid = 
   [ 11
     , 12, 12, 16, 16, 16, 12, 11, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 10, 10, 16, 16, 16, 16, 16, 11, 16, 12, 
@@ -73,11 +75,11 @@ $("#colorChooser").change(function() {
 
 $(".cell").mousedown(function(){
     event.preventDefault();
-    $(this).css("color", opac);
+    $(this).css("color", opac); //change num opacity when clicked
     $(this).css("background-color", color);
     $(".cell").mouseover(function(){
         $(this).css("background-color", color);
-        $(this).css("color", opac);
+        $(this).css("color", opac); //and when on hold
     });
 });
 
@@ -87,5 +89,5 @@ $(document).mouseup(function(){
         
 $("#reset").click(function(){
     $(".cell").css("background-color", "#ccc");
-    $(".cell").css("color", "rgba(0, 0, 0)");
+    $(".cell").css("color", "rgba(0, 0, 0)"); //reset num color
 });

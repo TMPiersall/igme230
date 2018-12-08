@@ -5,6 +5,7 @@ const numCells = numCols * numRows;
 let opac = ("rgba(0, 0, 0, 0.2)");
 let pixelGrid = document.querySelector("#pixelGrid");
 let color = $("#colorChooser").val(); //
+//bigger canvas calls for bigger array
 let medGrid = 
   [ 13, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 8, 3, 3, 3, 3, 13, 3, 3, 3, 3, 3, 3, 3, 13, 3, 3, 3,
     13, 13, 13, 9, 13, 8, 8, 9, 5, 5, 5, 9, 8, 9, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13,
@@ -26,6 +27,7 @@ let medGrid =
     2, 1, 1, 1, 1, 6, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1, 1, 1, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3,
     2, 3, 1, 1, 1, 1, 5, 5, 5, 1, 1, 5, 5, 5, 1, 1, 1, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3 ];
 
+//still hope to get the sliders going. Start code for that commented below
 /*let rSlider = document.getElementById("redslide");
 let rOutput = document.getElementById("rtest");
 rOutput.innerHTML = rSlider.value;
@@ -49,6 +51,8 @@ bOutput.innerHTML = bSlider.value;
 bSlider.oninput = function() {
     bOutput.innerHTML = this.value;
 }*/
+
+//auto sets the example color swatch to first med grid color
 $("#swatch").css("background-color", color);
 
 pixelGrid.style.gridTemplateRows = `repeat(${numRows}, ${cellSize}px)`; //JS doesnt like dashes so you have to do camel case
@@ -67,10 +71,10 @@ $("#colorChooser").change(function() {
 $(".cell").mousedown(function(){
     event.preventDefault();
     $(this).css("background-color", color);
-    $(this).css("color", opac);
+    $(this).css("color", opac); //change num opacity when clicked
     $(".cell").mouseover(function(){
         $(this).css("background-color", color);
-        $(this).css("color", opac);
+        $(this).css("color", opac); //and when on hold
     });
 });
 
@@ -80,5 +84,5 @@ $(document).mouseup(function(){
         
 $("#reset").click(function(){
     $(".cell").css("background-color", "#ccc");
-    $(".cell").css("color", "rgba(0, 0, 0)");
+    $(".cell").css("color", "rgba(0, 0, 0)"); //reset num color
 });

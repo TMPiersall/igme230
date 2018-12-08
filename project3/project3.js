@@ -4,7 +4,8 @@ const cellSize = 30;//px
 const numCells = numCols * numRows;
 let pixelGrid = document.querySelector("#pixelGrid");
 let opac = ("rgba(0, 0, 0, 0.2)");
-let color = $("#colorChooser").val(); //
+let color = $("#colorChooser").val(); 
+//easiest way for me to impliment a num grid this specific was through an array (or at least for someone with my limited knowledge)
 let easyGrid = 
   [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -39,10 +40,10 @@ $("#colorChooser").change(function() {
 $(".cell").mousedown(function(){
     event.preventDefault();
     $(this).css("background-color", color);
-    $(this).css("color", opac);
+    $(this).css("color", opac); //change num opacity when clicked
     $(".cell").mouseover(function(){
         $(this).css("background-color", color);
-        $(this).css("color", opac);
+        $(this).css("color", opac); //and when on hold
     });
 });
 
@@ -52,5 +53,5 @@ $(document).mouseup(function(){
         
 $("#reset").click(function(){
     $(".cell").css("background-color", "#ccc");
-    $(".cell").css("color", "rgba(0, 0, 0)");
+    $(".cell").css("color", "rgba(0, 0, 0)"); //reset num color
 });

@@ -6,9 +6,10 @@
 body {
     display: grid;
     min-height: 100vh;
+    /*Three row and three column grid for home page*/
     grid-template-areas: 
     "header header header"
-    ". main ."
+    ". main ." /*nothing on either side of img links*/
     "footer footer footer";
     grid-template-rows: 3% 10fr 3%;
     grid-template-columns: 30% auto 30%;
@@ -20,6 +21,7 @@ header{
     background-color: #ff9e9e;
 }
 
+/*Title of site, so the font is different*/
 span{
     font-family: 'Sacramento', cursive;
     font-size: 32px;
@@ -29,7 +31,7 @@ h1, h2{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-p{
+p{ /*explination text*/
     max-width: 70%;
     text-align: center;
     margin: auto;
@@ -39,11 +41,13 @@ p{
 
 nav{
     display: flex;
-    flex-direction: column;
+    /*aligns the menu items to the right*/
+    flex-direction: row; 
+    justify-content: flex-end;
     align-items: flex-end;
-    
 }
 
+/*dropdown div that holds the javascript menu*/
 #ddown{
     display: block;
     min-width: 240px;
@@ -51,10 +55,11 @@ nav{
     font-size: 18px;
 }
 
+/*paragraph header that opens and closes the menu*/
 #diff{
     display: block;
     margin: 0;
-    text-align: unset;
+    text-align: unset; /*the general <p> is set to center so this undoes that setting*/
     color: #22006d;
     background-color: #ff9e9e;
     font-family: 'Josefin Sans', sans-serif;
@@ -64,14 +69,14 @@ nav{
     color: #c068ff;
 }
 
+/*dropdown contents and geneeral nav link styles*/
 nav a{
-    /*text-align: right;
-    float: right;*/
     display: block;
     margin: 24px 20px 0px 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/*dropdown container styles*/
 nav ul{
     background-color: #7accff;
     min-width: 140px;
@@ -82,14 +87,15 @@ nav ul{
     display: none;
 }
 
+/*Specifically dropdown list styles. Was having issuses with general styles so there are multiple correlating styles between drop down list styles*/
 li{
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
 
+/*Holds image links for each canvas*/
 section{
     grid-area: main;
     text-align: center;
@@ -104,6 +110,7 @@ img{
     max-width: 400px; 
 }
 
+/*main section link styles*/
 a{
     display: block;
     margin-bottom: 50px;
@@ -120,12 +127,20 @@ img:hover{
     border-radius: 12px;
 }
 
-#doc{
-    padding-top: 10px;
-    margin: auto;
-    font-family: 'Josefin Sans', sans-serif;
+/*Moved documentation based on responsive design*/
+#mobiledoc{
+    display: none;
+}
+
+#doc {
+    display: inline;
     font-size: 18px;
-    max-width: 150px;
+    margin: 10px 20px 10px 0px;
+    color: #22006d;
+}
+
+#doc:hover{
+    color: #c068ff;
 }
 
 #mobile{
@@ -137,7 +152,7 @@ img:hover{
         display: grid;
         min-height: 100vh;
         max-width: 100vw;
-        grid-template-areas: 
+        grid-template-areas: /*just one column*/
         "header"
         "main"
         "footer";
@@ -164,6 +179,7 @@ img:hover{
         text-align: center;
     }
 
+    /**NAV STYLES**/
     #ddown{
         display: none;
     }
@@ -178,5 +194,19 @@ img:hover{
         display: inline;
         max-width: 100vh;
         font-size: 20px;
+    }
+
+    #doc{
+        display: none;
+    }
+
+    /**FOOTER**/
+    #mobiledoc{
+        display: block;
+        padding-top: 10px;
+        margin: auto;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+        max-width: 150px;
     }
 }

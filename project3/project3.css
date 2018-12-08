@@ -1,3 +1,4 @@
+/*One CSS for all three canvases, since all the styles are the same or similar to eachother.*/
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -8,6 +9,7 @@ html, body {
     padding: 0;
 }
 
+/*Only needed three rows and columns*/
 #wrapper {
     min-height: 100vh;
     display: grid;
@@ -19,12 +21,12 @@ html, body {
     ". grid aside"
 }
 
+/*there wasn't really a need for flexbox on this nav*/
 nav{
     grid-area: nav;
     display: block;
     background-color: #ff9e9e;
     text-align: right;
-
 }
 
 a{
@@ -57,10 +59,12 @@ a:hover{
     color: #c068ff;
 }
 
+/*ColorKey*/
 h2{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/***PAINTBYNUM GRID***/
 #pixelGrid {
     /*grid-row-start: 2;
     grid-column-start: 2;*/
@@ -83,6 +87,7 @@ span.cellSelected {
     border: none;
 }
 
+/***KEY***/
 #instructions {
     /*grid-row-start: 2;
     grid-column-start: 3;*/
@@ -132,6 +137,7 @@ option, select {
     background-color:#6b7db5;
 }
 
+/*for if I have time to impliment a rgb color slider to choose with*/
 #rSwatch, #gSwatch, #bSwatch{
     margin-top: 15px;
     max-width: 20px;
@@ -144,30 +150,10 @@ option, select {
     display: none;
 }
 
-/*#homediv{
-    display: flex;
-    justify-items: center;   
-    text-align: center;
-    padding-left: 50%;
-    min-width: 100%;
-}
-
-#homeLink{
-    background-color: white;
-    max-width: 25px;
-    display: flex;
-    justify-items: right;   
-    text-align: right;
-    max-height: 30px;
-    padding-left: 50%;
-}*/
-
-ol{
-    
-}
-
+/*though not necessarily necessary, I wanted the color key to not dissapear to a certain screen size*/
 @media only screen and (max-width: 850px) {
     #wrapper{
+        /*one column grid*/
         display: grid;
         grid-template-rows: 3rem 3rem auto auto;
         grid-template-columns: 1fr;
@@ -184,7 +170,6 @@ ol{
         justify-self: normal;
         padding-left: 10%;
         display: inline-block;
-
     }
 
     ol {
