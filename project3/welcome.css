@@ -171,6 +171,7 @@ img:hover{
     #mobile{
         display: inline;
         max-width: 100vh;
+        padding-top: 20px;
     }
 
     #mobile a{
