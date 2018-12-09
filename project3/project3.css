@@ -73,6 +73,7 @@ h2{
     grid-gap: 0px;
     justify-self: center;
     margin: 1em;
+    cursor: pointer;
 }
 
 span.cell {
