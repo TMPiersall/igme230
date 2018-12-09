@@ -45,6 +45,7 @@ $(".cell").mousedown(function(){
         $(this).css("background-color", color);
         $(this).css("color", opac); //and when on hold
     });
+    
 });
 
 $(document).mouseup(function(){

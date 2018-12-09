@@ -11,8 +11,8 @@ body {
     "header header header"
     ". main ." /*nothing on either side of img links*/
     "footer footer footer";
-    grid-template-rows: 40px 10fr 3%;
-    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 45px 10fr 3%;
+    grid-template-columns: 15% auto 15%;
     margin: 0;
 }
 
@@ -21,22 +21,25 @@ header{
     background-color: #ff9e9e;
 }
 
-/*Title of site, so the font is different*/
-span{
-    font-family: 'Sacramento', cursive;
+h1{
     font-size: 32px;
-}
-
-h1, h2{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-p{ /*explination text*/
-    max-width: 70%;
-    text-align: center;
+h2{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
     margin: auto;
-    margin-bottom: 50px;
+    max-width: 70%;
+}
+
+p{ 
+    max-width: 70%;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
     padding: 10px;
+    line-height: 1.5rem;
 }
 
 nav{
@@ -107,14 +110,12 @@ footer{
 }
 
 img{
-    max-width: 400px; 
+    max-width: 500px; 
+    margin-bottom: 50px;
 }
 
 /*main section link styles*/
 a{
-    display: block;
-    margin-bottom: 50px;
-    text-align: center;
     text-decoration: none;
     
 }
@@ -123,16 +124,12 @@ a:hover{
     color: #c068ff;
 }
 
-img:hover{
-    border-radius: 12px;
-}
-
 /*Moved documentation based on responsive design*/
 #mobiledoc{
     display: none;
 }
 
-#doc {
+#home {
     display: inline;
     font-size: 18px;
     margin: 10px 20px 10px 0px;
@@ -156,7 +153,7 @@ img:hover{
         "header"
         "main"
         "footer";
-        grid-template-rows: 5% 10fr 3%;
+        grid-template-rows: 45px 10fr 45px;
         grid-template-columns: 1fr;
         margin: 0;
     }
@@ -185,7 +182,7 @@ img:hover{
     }
 
     #mobile{
-        display: inline;
+        
         max-width: 100vh;
         padding-top: 20px;
     }
@@ -196,17 +193,8 @@ img:hover{
         font-size: 20px;
     }
 
-    #doc{
-        display: none;
-    }
-
-    /**FOOTER**/
-    #mobiledoc{
-        display: block;
-        padding-top: 10px;
-        margin: auto;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 18px;
-        max-width: 150px;
+    #home{
+        font-size: 20px;
+        padding-top: 5px;
     }
 }

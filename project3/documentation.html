@@ -1,0 +1,65 @@
+<!Doctype HTML>
+<html lang="en">
+    <head>
+        <Title>TMP Paint by Pixel</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="doc.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sacramento|Josefin+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="dropdown">
+                <a href="index.html" id="home">Home</a>
+                <div id="ddown"> 
+                    <p id="diff">Canvas Difficulty</p>
+                    <ul>
+                        <li><a href="hardCanvas.html">Hard</a></li>
+                        <li><a href="medCanvas.html">Medium</a></li>
+                        <li><a href="easyCanvas.html">Easy</a></li>  
+                    </ul>
+                </div>
+                <div id="mobile">
+                    <a href="hardCanvas.html">Hard</a>
+                    <a href="medCanvas.html">Medium</a>
+                    <a href="easyCanvas.html">Easy</a>
+                </div>
+            </nav>
+        </header>
+        <section id="info">
+            <section>
+                <h1>Documentation</h1>
+                <h2>Intended Audience</h2>
+                <p>The audience for this project is simply anyone who enjoys playing with interactive graphics, maybe puzzlers and painters as well. It’s not necessarily aimed for people who aren’t computer savvy but that doesn't mean that it's too complicated to be figured out.</p>
+            </section>
+            <section>
+                <h2>Wireframes</h2>
+                <img src="images/Proj3Wireframes.jpg">
+            </section>
+            <section>
+                <h2>Design Decisions</h2>
+                <p>Main Page - My pixel grids aren't exactly precise images so I wanted the main page to display the inspiration for each grid. The main page didn't need anything extravagant as it was mostly an introduction to what the puzzles where and an easy way to get there. The goal was to keep things simple.</p>
+                <p>Grids - Since the main focus of each grid page was the grid itself, there was no reason to make the rest of the page extravagant. The centerpiece of the page had to be the grid, and as I had nothing worth putting to the left, I left that area blank. The section to the right is the color key but I didn't want the user to ever have to scroll to the left or right due to the grid. Because of this I made a media query to move the color key below the grid after the window gets small enough.<br> Unfortunately the puzzles don't work well on mobile as they both become extremely small and the click and drag function does not work nearly as well. I chose to have the user become notified that the grid does not work on mobile and directs them to use a desktop instead.</p>
+                <p>General - I chose my unified header styles and font choices to be bubbly and fun. Even though it's a pixel grid it should be reminiscent of a paint by numbers which is freeform and fun.</p>
+            </section>
+            <section>
+                <h2>Sources</h2>
+                <p>First and foremost I began with the pixel grid exercise from class as a starting point. From there I was able to develop the pixel grid and create the paint by numbers</p>
+                <p>For the javascript that I used for the dropdown menu I also imitated a few elements of what we did in class exercises.</p>
+                <p>On the main page the three photos I used in order are: the chickadee from photographer Peter Lewis (I flipped it to better fit the grid), a picture of my dog taken by me, and the kitten from SunnySideScrambled on Imgur.</p>
+                <p>For any questions I had in reguard to jquery, javascript, and css I often referenced the <a href="https://www.w3schools.com/">w3schools website</a></p>
+            </section>
+            <section>
+                <h2>What Did I Learn?</h2>
+                <p>It was an interesting challenge for me to impliment the small array of numbers into the grid. Though on the surface it may seem like the changes I made were small and insignificant I thought it was important to note that as it has been an exercise in translating my rusty JS knowledge into the realm of HTML and CSS, it has been even more difficult to translate it over to jquery which I'll admit is a useful tool for web deverlopers. In my orignal sketches I'd hoped to impliment RGB sliders, and I know that it could be done, however I did not get it working in time for the end of the project as it was certainly a bit ambitious for my level or skill. Instead I keep the code I started around for the hope that I can impliment it properly in the future. I focused on having a color changing swatch for the user's benefit and on getting the number array to display properly since it was complicated for a very specific number grid to be input into the grid squares.</p>
+                <p>Playing with and manipulating css grid was a challenge for me. Though the pixel grid exercise started with css grid in place already I had to go through and rerwrite most of it to fit the grid I wanted and any elements I added or removed. The most difficult part was rewriting it to fit my nav, and putting assigning grid areas because it ended up meaning a near full rewrite of certain parts to get it working. However, by doing this I learned a lot about CSS grid and it ended up helping me in further situations where it came in handy.</p>
+            </section>
+        </section>
+        <footer>
+            <a href id="mobiledoc">Documentation</a>
+        </footer>
+
+        <script src="welcome.js"></script>
+
+    </body>
+</html>
