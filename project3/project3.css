@@ -101,6 +101,10 @@ span.cellSelected {
     max-width: 200px;
 }
 
+label{
+    display: none;
+}
+
 #colorChooser {
     height: 1.5rem;
     margin: 0; 
